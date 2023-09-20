@@ -15,7 +15,107 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./../dist/output.css" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
-  <body></body>
+  <body class="font-hanken">
+    <div class="flex flex-col h-screen">
+      <div
+        class="w-screen h-[45%] text-new-white rounded-br-3xl rounded-bl-3xl flex flex-col justify-center items-center gap-5 bg-gradient-to-b from-light-slate-blue to-light-royal-blue"
+      >
+        <h2 class="tracking-wide font-extralight text-new-white/75">
+          Your Result
+        </h2>
+        <div
+          class="h-[150px] w-[150px] rounded-full flex flex-col justify-center items-center bg-gradient-to-b from-Violet-blue to-persian-blue"
+        >
+          <p class="text-6xl font-black text-new-white">76</p>
+          <p class="pt-3 text-xs font-light text-new-white/50">of 100</p>
+        </div>
+        <h2 class="text-xl font-semibold tracking-wide">Great</h2>
+        <p class="w-2/3 text-sm text-center font-extralight text-new-white/75">
+          You scored higher than 65% of the people who have taken these tests
+        </p>
+      </div>
+      <div class="w-screen h-[55%]">
+        <div class="mx-8 mt-6">
+          <h2 class="text-dark-gray-blue">Summary</h2>
+          <div class="flex flex-col gap-4 text-base font-normal">
+            <div
+              class="px-2 text-light-red bg-light-red/[0.1] py-3 rounded-md flex gap-1 items-center"
+            >
+              <div class="justify-start w-1/12">
+                <img
+                  src="./../assets/images/icon-reaction.svg"
+                  alt="reaction-icon"
+                  class="w-5 h-5"
+                />
+              </div>
+
+              <p class="justify-end w-8/12 pl-1 capitalize">reaction</p>
+              <p class="w-3/12">
+                <span class="text-dark-gray-blue">80</span>
+                <span class="text-light-lavender">/ 100</span>
+              </p>
+            </div>
+            <div
+              class="text-orangey-yellow bg-orangey-yellow/[0.1] px-2 py-3 rounded-md flex gap-1 items-center"
+            >
+              <div class="justify-start w-1/12">
+                <img
+                  src="./../assets/images/icon-memory.svg"
+                  alt="memory-icon"
+                  class="w-5 h-5"
+                />
+              </div>
+              <p class="justify-end w-8/12 pl-1 capitalize">memory</p>
+              <p class="w-3/12">
+                <span class="text-dark-gray-blue">92</span>
+                <span class="text-light-lavender">/ 100</span>
+              </p>
+            </div>
+            <div
+              class="px-2 text-green-teal bg-green-teal/[0.1] py-3 rounded-md flex gap-1 items-center"
+            >
+              <div class="justify-start w-1/12">
+                <img
+                  src="./../assets/images/icon-verbal.svg"
+                  alt="verbal-icon"
+                  class="w-5 h-5"
+                />
+              </div>
+              <p class="justify-end w-8/12 pl-1 capitalize">verbal</p>
+              <p class="w-3/12">
+                <span class="text-dark-gray-blue">61</span>
+                <span class="text-light-lavender">/ 100</span>
+              </p>
+            </div>
+            <div
+              class="px-2 text-cobalt-blue bg-cobalt-blue/[0.1] py-3 rounded-md flex gap-1 items-center"
+            >
+              <div class="justify-start w-1/12">
+                <img
+                  src="./../assets/images/icon-visual.svg"
+                  alt="visual-icon"
+                  class="w-5 h-5"
+                />
+              </div>
+
+              <p class="justify-end w-8/12 pl-1 capitalize">visual</p>
+              <p class="w-3/12">
+                <span class="text-dark-gray-blue">72</span>
+                <span class="text-light-lavender">/ 100</span>
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="items-center justify-center w-full py-3 mt-4 bg-dark-gray-blue rounded-3xl"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,101 +20,123 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body class="font-hanken">
-    <div class="flex flex-col h-screen">
-      <div
-        class="w-screen h-[45%] text-new-white rounded-br-3xl rounded-bl-3xl flex flex-col justify-center items-center bg-gradient-to-b from-light-slate-blue to-light-royal-blue"
-      >
-        <p class="mb-4 tracking-wide font-extralight text-new-white/75">
-          Your Result
-        </p>
+    <div
+      class="w-screen sm:flex sm:items-center sm:w-[600px] sm:h-screen sm:mx-auto"
+    >
+      <!-- Upper Card -->
+      <div class="sm:flex sm:w-full sm:h-[400px] sm:shadow-2xl sm:rounded-3xl">
         <div
-          class="mb-4 h-[150px] w-[150px] rounded-full flex flex-col justify-center items-center bg-gradient-to-b from-Violet-blue to-persian-blue"
+          class="flex justify-center pt-5 pb-8 text-center sm:w-1/2 bg-gradient-to-b from-light-slate-blue to-light-royal-blue rounded-b-3xl sm:rounded-3xl"
         >
-          <p class="font-black text-7xl text-new-white">76</p>
-          <p class="pt-3 text-xs font-light text-new-white/50">of 100</p>
-        </div>
-        <p class="mb-2 text-xl font-semibold tracking-wide">Great</p>
-        <p class="w-2/3 text-sm text-center font-extralight text-new-white/75">
-          You scored higher than 65% of the people who have taken these tests
-        </p>
-      </div>
-      <div class="w-screen h-[55%]">
-        <div class="mx-8">
-          <p class="my-5 text-dark-gray-blue">Summary</p>
-          <div class="flex flex-col gap-4 text-base">
-            <div
-              class="px-2 text-light-red bg-light-red/[0.1] py-3 rounded-md flex items-center"
+          <div class="flex flex-col items-center">
+            <p
+              class="text-sm font-light text-white/[.8] sm:py-2 sm:text-lg sm:font-bold"
             >
-              <div class="justify-start w-1/12">
-                <img
-                  src="./../assets/images/icon-reaction.svg"
-                  alt="reaction-icon"
-                  class="w-5 h-5"
-                />
-              </div>
-
-              <div class="justify-end w-8/12 pl-1 capitalize">reaction</div>
-              <div class="w-3/12">
-                <span class="text-dark-gray-blue">80</span>
-                <span class="text-dark-gray-blue/[0.4]">/ 100</span>
-              </div>
-            </div>
+              Your Result
+            </p>
             <div
-              class="text-orangey-yellow bg-orangey-yellow/[0.1] px-2 py-3 rounded-md flex gap-1 items-center"
+              class="my-5 h-[100px] w-[100px] sm:h-[150px] sm:w-[150px] bg-gradient-to-b from-violet-blue to-persian-blue rounded-full flex flex-col justify-center"
             >
-              <div class="justify-start w-1/12">
-                <img
-                  src="./../assets/images/icon-memory.svg"
-                  alt="memory-icon"
-                  class="w-5 h-5"
-                />
-              </div>
-              <div class="justify-end w-8/12 pl-1 capitalize">memory</div>
-              <div class="w-3/12">
-                <span class="text-dark-gray-blue">92</span>
-                <span class="text-dark-gray-blue/[0.4]">/ 100</span>
-              </div>
+              <p
+                class="py-1 text-5xl font-semibold text-white sm:text-6xl sm:py-2"
+              >
+                76
+              </p>
+              <p class="text-xs text-white/[.3] sm:text-sm">of 100</p>
             </div>
-            <div
-              class="px-2 text-green-teal bg-green-teal/[0.1] py-3 rounded-md flex gap-1 items-center"
+            <p
+              class="text-xl font-normal tracking-wide text-white sm:text-2xl sm:font-semibold"
             >
-              <div class="justify-start w-1/12">
-                <img
-                  src="./../assets/images/icon-verbal.svg"
-                  alt="verbal-icon"
-                  class="w-5 h-5"
-                />
-              </div>
-              <div class="justify-end w-8/12 pl-1 capitalize">verbal</div>
-              <div class="w-3/12">
-                <span class="text-dark-gray-blue">61</span>
-                <span class="text-dark-gray-blue/[0.4]">/ 100</span>
-              </div>
-            </div>
-            <div
-              class="px-2 text-cobalt-blue bg-cobalt-blue/[0.1] py-3 rounded-md flex gap-1 items-center"
+              Great
+            </p>
+            <p
+              class="my-2 text-sm min-w-[200px] max-w-[250px] text-white/[.7] font-light tracking-wide sm:w-[150px]"
             >
-              <div class="justify-start w-1/12">
-                <img
-                  src="./../assets/images/icon-visual.svg"
-                  alt="visual-icon"
-                  class="w-5 h-5"
-                />
-              </div>
-
-              <div class="justify-end w-8/12 pl-1 capitalize">visual</div>
-              <div class="w-3/12">
-                <span class="text-dark-gray-blue">72</span>
-                <span class="text-dark-gray-blue/[0.4]">/ 100</span>
-              </div>
-            </div>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
           </div>
-          <button
-            type="button"
-            class="items-center justify-center w-full py-3 mt-6 font-light text-new-white bg-dark-gray-blue rounded-3xl"
-          >
-            Continue
-          </button>
+        </div>
+
+        <!-- Lower Card -->
+        <div class="flex justify-center pt-6 sm:w-1/2 sm:rounded-e-3xl">
+          <div class="px-10 capitalize flex flex-col w-full max-w-[450px]">
+            <p class="text-lg font-bold">summary</p>
+            <div class="flex flex-col gap-4 py-6 text-sm font-700">
+              <div
+                class="flex items-center gap-2 py-3 px-3 bg-light-red/[.1] rounded-md"
+              >
+                <div class="w-1/12">
+                  <img
+                    src="./../assets/images/icon-reaction.svg"
+                    alt="reaction-icon"
+                    class="w-5 h-5"
+                  />
+                </div>
+
+                <p class="w-6/12 text-light-red">reaction</p>
+                <p class="w-5/12 text-right">
+                  <span class="text-dark-gray-blue">80</span>
+                  <span class="text-dark-gray-blue/[.5]">/ 100</span>
+                </p>
+              </div>
+              <div
+                class="flex w-full items-center gap-2 py-3 px-3 bg-orangey-yellow/[.1] rounded-md"
+              >
+                <div class="w-1/12">
+                  <img
+                    src="./../assets/images/icon-memory.svg"
+                    alt="memory-icon"
+                    class="w-5 h-5"
+                  />
+                </div>
+                <p class="w-6/12 text-orangey-yellow">memory</p>
+                <p class="w-5/12 text-right">
+                  <span class="text-dark-gray-blue">92</span>
+                  <span class="text-dark-gray-blue/[.5]">/ 100</span>
+                </p>
+              </div>
+              <div
+                class="flex w-full items-center gap-2 py-3 px-3 bg-green-teal/[.1] rounded-md"
+              >
+                <div class="w-1/12">
+                  <img
+                    src="./../assets/images/icon-verbal.svg"
+                    alt="verbal-icon"
+                    class="w-5 h-5"
+                  />
+                </div>
+                <p class="w-6/12 text-green-teal">verbal</p>
+                <p class="w-5/12 text-right">
+                  <span class="text-dark-gray-blue">61</span>
+                  <span class="text-dark-gray-blue/[.5]">/ 100</span>
+                </p>
+              </div>
+              <div
+                class="flex w-full items-center gap-2 py-3 px-3 bg-cobalt-blue/[.1] rounded-md"
+              >
+                <div class="w-1/12">
+                  <img
+                    src="./../assets/images/icon-visual.svg"
+                    alt="visual-icon"
+                    class="w-5 h-5"
+                  />
+                </div>
+
+                <p class="w-6/12 text-cobalt-blue">visual</p>
+                <p class="w-5/12 text-right">
+                  <span class="text-dark-gray-blue">72</span>
+                  <span class="text-dark-gray-blue/[.5]">/ 100</span>
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="w-full px-3 py-4 font-medium text-center text-white rounded-full bg-dark-gray-blue sm:bg-gradient-to-b from-light-slate-blue to-light-royal-blue sm:py-3"
+            >
+              Continue
+            </button>
+          </div>
         </div>
       </div>
     </div>

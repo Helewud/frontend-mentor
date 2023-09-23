@@ -11,21 +11,68 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./tailwind.config.js"></script>
     <title>Frontend Mentor | Product preview card component</title>
   </head>
-  <body>
-    Perfume Gabrielle Essence Eau De Parfum A floral, solar and voluptuous
-    interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-    CHANEL. $149.99 $169.99 Add to Cart
+  <body class="bg-[#f2ebe3] font-[Montserrat]">
+    <div class="flex h-screen p-5 sm:items-center sm:justify-center">
+      <div
+        class="flex flex-col justify-center sm:flex-row sm:h-[420px] sm:w-[600px]"
+      >
+        <div class="sm:w-1/2">
+          <img
+            src="./assets/images/image-product-mobile.jpg"
+            alt="perfume image"
+            class="rounded-t-lg sm:hidden w-50 h-50"
+          />
+          <img
+            src="./assets/images/image-product-desktop.jpg"
+            alt="perfume image"
+            class="hidden rounded-l-lg sm:flex sm:w-full sm:h-full"
+          />
+        </div>
+        <div
+          class="p-6 bg-white rounded-b-lg sm:rounded-none sm:rounded-r-lg sm:w-1/2"
+        >
+          <p
+            class="text-sm text-[#6c7289] font-normal tracking-[0.4rem] uppercase"
+          >
+            Perfume
+          </p>
+          <p class="my-4 text-3xl font-bold font-[Fraunces] text-[#1c232b]">
+            Gabrielle Essence Eau De Parfum
+          </p>
+          <p class="text-sm text-[#6c7289] text-left">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <p class="flex items-center gap-5 my-6">
+            <span class="font-bold font-[Fraunces] text-[#3c8067] text-3xl"
+              >$149.99</span
+            >
+            <span class="text-sm text-[#6c7289] line-through">$169.99</span>
+          </p>
+
+          <button
+            type="button"
+            class="flex w-full py-3 rounded-lg bg-[#3c8067] hover:bg-[#174534] text-white font-bold"
+          >
+            <div class="flex items-center gap-2 mx-auto">
+              <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                  fill="#FFF"
+                />
+              </svg>
+              <p>Add to Cart</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
